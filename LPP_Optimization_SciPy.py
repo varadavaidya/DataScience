@@ -1,6 +1,6 @@
 from scipy.optimize import linprog
 
-obj = [-1, -1, -1, 0, 0, 0, 0, 0, 0, 0] #data from one node to another X[ij]
+obj = [-1, -1, -1, 0, 0, 0, 0, 0, 0, 0] #data from one node to another X[ij] ....no signs assigned for flow..let the solution determine them
 
 lhs_ineq=[[1,0,0,0,0,0,0,0,0,0],         #X12
           [-1,0,0,0,0,0,0,0,0,0],        #X12
